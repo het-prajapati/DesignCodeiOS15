@@ -15,9 +15,11 @@ struct ContentView: View {
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 26, height: 26)
-                .cornerRadius(20.0)
+                .cornerRadius(10)
                 .padding(9)
-                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .strokeStyle(cornerRadius: 16)
+                
             Text("Introduction")
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -41,17 +43,13 @@ struct ContentView: View {
         //        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
         
-        .overlay(
-            RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .stroke(.linearGradient(colors: [.white.opacity(0.3), .black.opacity(0.1)], startPoint: .top, endPoint: .bottom))
-                .blendMode(.overlay)
-        )
+        .strokeStyle()
         .padding(.horizontal, 20.0)
         .background(
             Image("Blob 1").offset(x: 250, y: -100)
         )
         .overlay(
-            Image("Illustration 5")
+            Image("Illustration 2")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 230)
@@ -62,8 +60,13 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .preferredColorScheme(.light)
+        Group {
+            ContentView()
+                .preferredColorScheme(.light)
             .previewDevice("iPhone 13 Pro")
+            ContentView()
+                .preferredColorScheme(.dark)
+                .previewDevice("iPhone 13 Pro")
+        }
     }
 }

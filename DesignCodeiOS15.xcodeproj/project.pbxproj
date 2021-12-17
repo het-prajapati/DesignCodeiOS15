@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5824C6B9276C3EC400805283 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5824C6B8276C3EC400805283 /* Styles.swift */; };
+		5824C6BB276C481500805283 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5824C6BA276C481500805283 /* AccountView.swift */; };
 		58C3050E276AF60800AF4335 /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3050D276AF60800AF4335 /* DesignCodeiOS15App.swift */; };
 		58C30510276AF60800AF4335 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3050F276AF60800AF4335 /* ContentView.swift */; };
 		58C30512276AF60900AF4335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C30511276AF60900AF4335 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5824C6B8276C3EC400805283 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		5824C6BA276C481500805283 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		58C3050A276AF60800AF4335 /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C3050D276AF60800AF4335 /* DesignCodeiOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15App.swift; sourceTree = "<group>"; };
 		58C3050F276AF60800AF4335 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				58C3050D276AF60800AF4335 /* DesignCodeiOS15App.swift */,
 				58C3050F276AF60800AF4335 /* ContentView.swift */,
+				5824C6BA276C481500805283 /* AccountView.swift */,
+				5824C6B8276C3EC400805283 /* Styles.swift */,
 				58C30511276AF60900AF4335 /* Assets.xcassets */,
 				58C30513276AF60900AF4335 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5824C6BB276C481500805283 /* AccountView.swift in Sources */,
+				5824C6B9276C3EC400805283 /* Styles.swift in Sources */,
 				58C30510276AF60800AF4335 /* ContentView.swift in Sources */,
 				58C3050E276AF60800AF4335 /* DesignCodeiOS15App.swift in Sources */,
 			);
