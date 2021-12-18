@@ -11,6 +11,8 @@
 		5824C6BB276C481500805283 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5824C6BA276C481500805283 /* AccountView.swift */; };
 		585A5A7D276D19F0005B4834 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585A5A7C276D19F0005B4834 /* HexagonView.swift */; };
 		585A5A7F276D1CBF005B4834 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585A5A7E276D1CBF005B4834 /* BlobView.swift */; };
+		585A5A81276D8C8A005B4834 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585A5A80276D8C8A005B4834 /* TabBar.swift */; };
+		585A5A85276D917B005B4834 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585A5A84276D917B005B4834 /* Tab.swift */; };
 		58C3050E276AF60800AF4335 /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3050D276AF60800AF4335 /* DesignCodeiOS15App.swift */; };
 		58C30510276AF60800AF4335 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3050F276AF60800AF4335 /* ContentView.swift */; };
 		58C30512276AF60900AF4335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C30511276AF60900AF4335 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		5824C6BA276C481500805283 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		585A5A7C276D19F0005B4834 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
 		585A5A7E276D1CBF005B4834 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
+		585A5A80276D8C8A005B4834 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		585A5A84276D917B005B4834 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		58C3050A276AF60800AF4335 /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C3050D276AF60800AF4335 /* DesignCodeiOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15App.swift; sourceTree = "<group>"; };
 		58C3050F276AF60800AF4335 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			children = (
 				58C3050D276AF60800AF4335 /* DesignCodeiOS15App.swift */,
 				58C3050F276AF60800AF4335 /* ContentView.swift */,
+				585A5A80276D8C8A005B4834 /* TabBar.swift */,
+				585A5A84276D917B005B4834 /* Tab.swift */,
 				5824C6BA276C481500805283 /* AccountView.swift */,
 				585A5A7C276D19F0005B4834 /* HexagonView.swift */,
 				585A5A7E276D1CBF005B4834 /* BlobView.swift */,
@@ -152,9 +158,11 @@
 				5824C6BB276C481500805283 /* AccountView.swift in Sources */,
 				585A5A7D276D19F0005B4834 /* HexagonView.swift in Sources */,
 				5824C6B9276C3EC400805283 /* Styles.swift in Sources */,
+				585A5A85276D917B005B4834 /* Tab.swift in Sources */,
 				585A5A7F276D1CBF005B4834 /* BlobView.swift in Sources */,
 				58C30510276AF60800AF4335 /* ContentView.swift in Sources */,
 				58C3050E276AF60800AF4335 /* DesignCodeiOS15App.swift in Sources */,
+				585A5A81276D8C8A005B4834 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
