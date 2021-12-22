@@ -9,36 +9,49 @@ import SwiftUI
 
 struct HomeView: View {
     @State var hasScrolled = false
+    @Namespace var namespace
+    @State var show = false
+    
     var body: some View {
         ZStack {
             Color("Background").ignoresSafeArea()
+            
+            
             ScrollView {
                 
-               scrollDetection
+                scrollDetection
                 
                 featured
                 
-                Color.clear.frame(height: 1000)
-            }
-            .coordinateSpace(name: "scroll")
-            .onPreferenceChange(ScrollPreferenceKeys.self, perform: { value in
+                Text("Courses".uppercased())
+                    .font(.footnote.weight(.semibold))
+                    .foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 20)
                 
-                withAnimation(.easeInOut) {
-                    if value < 0 {
-                        hasScrolled = true
-                    } else {
-                        hasScrolled = false
-                    }
+                if !show{
+                    CourseItem(namespace: namespace, show: $show)
+                        .onTapGesture {
+                            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                                show.toggle()
+                            }
+                        }
                 }
                 
-            })
+                
+            }
+            .coordinateSpace(name: "scroll")
             .safeAreaInset(edge: .top, content: {
                 Color.clear.frame(height: 70)
             })
             .overlay(
                 NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
-                    
-        )
+                
+            )
+            
+            if show{
+                CourseView(namespace: namespace, show: $show)
+            }
         }
     }
     
@@ -47,6 +60,17 @@ struct HomeView: View {
             Color.clear.preference(key: ScrollPreferenceKeys.self, value: proxy.frame(in: .named("scroll")).minY)
         }
         .frame(height: 0)
+        .onPreferenceChange(ScrollPreferenceKeys.self, perform: { value in
+            
+            withAnimation(.easeInOut) {
+                if value < 0 {
+                    hasScrolled = true
+                } else {
+                    hasScrolled = false
+                }
+            }
+            
+        })
     }
     
     var featured: some View{
@@ -68,10 +92,10 @@ struct HomeView: View {
                                 .frame(height: 230)
                                 .offset(x: 32, y: -80)
                                 .offset(x: minX / 2)
-                    )
-                        
+                        )
                     
-//                    Text("\(proxy.frame(in: .global).minX)")
+                    
+                    //                    Text("\(proxy.frame(in: .global).minX)")
                 }
             }
         }
