@@ -22,6 +22,8 @@
 		5871E272276EC648006AE705 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5871E271276EC648006AE705 /* PreferenceKeys.swift */; };
 		5871E274276ECD5F006AE705 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5871E273276ECD5F006AE705 /* AnimatableFontModifier.swift */; };
 		5871E276276ED32C006AE705 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5871E275276ED32C006AE705 /* Course.swift */; };
+		58BC35BF2799FB12009BB9E4 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BC35BE2799FB12009BB9E4 /* Animations.swift */; };
+		58BC35C1279A15A4009BB9E4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BC35C0279A15A4009BB9E4 /* Model.swift */; };
 		58C3050E276AF60800AF4335 /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3050D276AF60800AF4335 /* DesignCodeiOS15App.swift */; };
 		58C30510276AF60800AF4335 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3050F276AF60800AF4335 /* ContentView.swift */; };
 		58C30512276AF60900AF4335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C30511276AF60900AF4335 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		5871E271276EC648006AE705 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		5871E273276ECD5F006AE705 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		5871E275276ED32C006AE705 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		58BC35BE2799FB12009BB9E4 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		58BC35C0279A15A4009BB9E4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		58C3050A276AF60800AF4335 /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C3050D276AF60800AF4335 /* DesignCodeiOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15App.swift; sourceTree = "<group>"; };
 		58C3050F276AF60800AF4335 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 				585A5A84276D917B005B4834 /* Tab.swift */,
 				5871E275276ED32C006AE705 /* Course.swift */,
 				5871E271276EC648006AE705 /* PreferenceKeys.swift */,
+				58BC35C0279A15A4009BB9E4 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			children = (
 				5824C6B8276C3EC400805283 /* Styles.swift */,
 				5871E273276ECD5F006AE705 /* AnimatableFontModifier.swift */,
+				58BC35BE2799FB12009BB9E4 /* Animations.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -236,7 +242,9 @@
 				58C3050E276AF60800AF4335 /* DesignCodeiOS15App.swift in Sources */,
 				58191DD72773AF4C0055DD6A /* CourseItem.swift in Sources */,
 				5871E26E276E5E61006AE705 /* FeaturedItem.swift in Sources */,
+				58BC35BF2799FB12009BB9E4 /* Animations.swift in Sources */,
 				5871E272276EC648006AE705 /* PreferenceKeys.swift in Sources */,
+				58BC35C1279A15A4009BB9E4 /* Model.swift in Sources */,
 				585A5A81276D8C8A005B4834 /* TabBar.swift in Sources */,
 				5871E274276ECD5F006AE705 /* AnimatableFontModifier.swift in Sources */,
 			);
@@ -383,7 +391,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.designcode.DesignCodeiOS15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.designCode.hprajapati;
 				PRODUCT_NAME = DesignCode;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -413,7 +421,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.designcode.DesignCodeiOS15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.designCode.hprajapati;
 				PRODUCT_NAME = DesignCode;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
